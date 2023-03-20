@@ -42,8 +42,7 @@ $(document).on('mouseover', '.weekCell', function() {
 
 $(document).on('mouseout', '.weekCell', function() {
   // Remove all date divs when the mouse leaves the table
-  var dateDivs = $('.dateDiv');
   setTimeout(function() {
-    dateDivs.remove();
+     $('.dateDiv').remove();
   }, 0);
 });
