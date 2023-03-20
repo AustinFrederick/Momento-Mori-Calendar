@@ -1,0 +1,43 @@
+.weekCell{
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid #c6c6c6;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.weekCell:hover{
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+  background: #e7e7e7;
+  transition: background-color .3s ease-in-out !important;
+}
+.weekLived{
+  background: #cecece;
+  transition: background-color .75s ease-in-out;
+}
+.container{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.dateDiv{
+  width: 25px;
+  height: 15px;
+  background: #cecece;
+  border: 1px solid #636363;
+}
+.weekCellExample{
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid #c6c6c6;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.weekLivedExample{
+    background: #cecece;
+}
+.weekNotLivedExample{
+
+}
