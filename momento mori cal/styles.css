@@ -29,6 +29,7 @@
   border-radius: 3px;
   text-align: center;
   padding: 2px;
+  overflow: hidden;
 }
 .weekCellExample{
   margin: auto;
@@ -49,5 +50,8 @@
   text-align: center;
 }
 .row {
-  min-width: 1200px; /* set your desired minimum width here */
+  min-width: 1200px;
+}
+body{
+  overflow-x: hidden;
 }
