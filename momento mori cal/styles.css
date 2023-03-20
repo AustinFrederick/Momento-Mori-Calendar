@@ -48,3 +48,6 @@
 .weekExampleCol{
   text-align: center;
 }
+.row {
+  min-width: 1200px; /* set your desired minimum width here */
+}
