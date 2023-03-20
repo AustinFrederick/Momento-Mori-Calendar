@@ -14,7 +14,7 @@
 }
 .weekLived{
   background: #cecece;
-  transition: background-color .75s ease-in-out;
+  transition: background-color .5s ease-in-out;
 }
 .container{
   margin-top: 5px;
@@ -22,14 +22,16 @@
 }
 .dateDiv{
   display: inline-block;
-  min-width: 115px;
-  height:25px;
-  background: #cecece;
-  border: 1px solid #909090;
+  min-width: auto;
+  height:auto;
+  background: #e7e7e7;
+  border: 1px solid #cecece;
   border-radius: 3px;
   text-align: center;
   padding: 2px;
   overflow: hidden;
+  font-weight: 600;
+  color: #3e3e3e;
 }
 .weekCellExample{
   margin: auto;
