@@ -8,7 +8,7 @@ $(document).ready(function(){ //get the input date, calculate how many weeks sin
     var cellsToColor = Math.min(weeksSince, 52);
     $('.weekCell').removeClass('weekLived');
 
-    for(var i=0; i<weeksSince; i++){
+    for(var i=0; i<weeksSince+1; i++){
       $('.weekCell').eq(i).addClass('weekLived');
     }
   });
