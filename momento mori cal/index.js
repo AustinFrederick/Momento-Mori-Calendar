@@ -27,7 +27,7 @@ $(document).on('mouseover', '.weekCell', function() {
     var index = weekCells.index($(this));
     var numWeeks = index * 7;
     var newDate = new Date(startDate.getTime());
-    newDate.setDate(startDate.getDate() + numWeeks);
+    newDate.setDate(startDate.getDate() + numWeeks +1);
     dateDiv.html(newDate.toDateString());
     var cellOffset = $(this).offset();
     dateDiv.css({
