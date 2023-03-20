@@ -12,3 +12,37 @@ $(document).ready(function(){ //get the input date, calculate how many weeks sin
     }
   });
 });
+var dateDiv = $('<div class="dateDiv"></div>');
+$('body').append(dateDiv);
+// hide the dateDiv by default
+dateDiv.hide();
+$(document).on('mouseover', '.weekCell', function() {
+  if ($('#dateInput').val() != '') {
+    //get start date, get weekCells, creat date div
+    var startDate = new Date($('#dateInput').val());
+    var weekCells = $('.weekCell');
+    var dateDiv = $('<div class="dateDiv"></div>');
+    //append div, get index of last weekCell, calculate date , set css
+    $('body').append(dateDiv);
+    var index = weekCells.index($(this));
+    var numWeeks = index * 7;
+    var newDate = new Date(startDate.getTime());
+    newDate.setDate(startDate.getDate() + numWeeks);
+    dateDiv.html(newDate.toDateString());
+    var cellOffset = $(this).offset();
+    dateDiv.css({
+      'position': 'absolute',
+      'top': cellOffset.top - dateDiv.outerHeight(),
+      'left': cellOffset.left,
+      'z-index': 1000
+    });
+  }
+});
+
+$(document).on('mouseout', '.weekCell', function() {
+  // Remove all date divs when the mouse leaves the table
+  var dateDivs = $('.dateDiv');
+  setTimeout(function() {
+    dateDivs.remove();
+  }, 0);
+});

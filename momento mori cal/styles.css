@@ -21,10 +21,14 @@
   margin-bottom: 5px;
 }
 .dateDiv{
-  width: 25px;
-  height: 15px;
+  display: inline-block;
+  min-width: 115px;
+  height:25px;
   background: #cecece;
-  border: 1px solid #636363;
+  border: 1px solid #909090;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px;
 }
 .weekCellExample{
   margin: auto;
