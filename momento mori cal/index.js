@@ -1,3 +1,4 @@
+//created by Austin Frederick 2023
 $(document).ready(function(){ //get the input date, calculate how many weeks since that date, fill in that many week cells
   $('#dateForm').submit(function(event){
     event.preventDefault();
